@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1421442171949" name="RGWbundles" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+	<resource>
+		<capability namespace="osgi.identity">
+			<attribute name="osgi.identity" value="javax.servlet"/>
+			<attribute name="type" value="osgi.bundle"/>
+			<attribute name="version" type="Version" value="2.4"/>
+		</capability>
+	</resource>
+</repository>
