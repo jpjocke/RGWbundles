@@ -4,7 +4,42 @@
 		<capability namespace="osgi.identity">
 			<attribute name="osgi.identity" value="javax.servlet"/>
 			<attribute name="type" value="osgi.bundle"/>
-			<attribute name="version" type="Version" value="2.4"/>
+			<attribute name="version" type="Version" value="2.4.0"/>
 		</capability>
+		<capability namespace="osgi.content">
+			<attribute name="osgi.content" value="c2030131f54c997400a1b245980f609489fd4cded5283ac3fb17bfee6ca8ff49"/>
+			<attribute name="url" value="javax.servlet/javax.servlet-2.4.0.jar"/>
+			<attribute name="size" type="Long" value="118865"/>
+			<attribute name="mime" value="application/vnd.osgi.bundle"/>
+		</capability>
+		<capability namespace="osgi.wiring.bundle">
+			<attribute name="osgi.wiring.bundle" value="javax.servlet"/>
+			<attribute name="bundle-version" type="Version" value="2.4.0"/>
+		</capability>
+		<capability namespace="osgi.wiring.host">
+			<attribute name="osgi.wiring.host" value="javax.servlet"/>
+			<attribute name="bundle-version" type="Version" value="2.4.0"/>
+		</capability>
+		<capability namespace="osgi.wiring.package">
+			<attribute name="osgi.wiring.package" value="javax.servlet"/>
+			<attribute name="version" type="Version" value="2.4.0"/>
+			<attribute name="bundle-symbolic-name" value="javax.servlet"/>
+			<attribute name="bundle-version" type="Version" value="2.4.0"/>
+		</capability>
+		<capability namespace="osgi.wiring.package">
+			<attribute name="osgi.wiring.package" value="javax.servlet.http"/>
+			<attribute name="version" type="Version" value="2.4.0"/>
+			<attribute name="bundle-symbolic-name" value="javax.servlet"/>
+			<attribute name="bundle-version" type="Version" value="2.4.0"/>
+		</capability>
+		<capability namespace="osgi.wiring.package">
+			<attribute name="osgi.wiring.package" value="javax.servlet.resources"/>
+			<attribute name="version" type="Version" value="2.4.0"/>
+			<attribute name="bundle-symbolic-name" value="javax.servlet"/>
+			<attribute name="bundle-version" type="Version" value="2.4.0"/>
+		</capability>
+		<requirement namespace="osgi.ee">
+			<directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))"/>
+		</requirement>
 	</resource>
 </repository>
