@@ -28,7 +28,7 @@ task('index') {
     javaexec {
       main = '-jar' // first arg must be the jar
       args configurations.repoindex.singleFile
-      args '-n', 'BundleHub'
+      args '-n', 'rgw-bundles'
       args bundles*.absolutePath
     }.assertNormalExitValue()
   }
